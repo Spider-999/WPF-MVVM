@@ -16,5 +16,15 @@ namespace WPF_MVVM.Models
             _reservationBook = new ReservationBook();
             _name = name;
         }
+
+        public void AddHotelReservation(Reservation reservation)
+        {
+            _reservationBook.AddReservation(reservation);
+        }
+
+        public void ViewHotelReservations()
+        {
+            _reservationBook.ViewReservations();
+        }
     }
 }
